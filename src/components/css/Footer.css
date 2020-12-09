@@ -1,0 +1,61 @@
+footer{
+    background-color: white;
+    color:rgb(44, 129, 150);
+}
+footer input{
+    margin: 2% 0 0 30%;
+    width: 30%;
+    padding: 10px;
+    font-size: 15px;
+    border: 2px solid  rgb(44, 129, 150);
+    border-radius: 7px 0 0 7px;
+    color: rgb(141, 145, 146);
+}
+.credits{
+ background-color: #10242e;
+ color: #ffffff;
+}
+
+footer input:hover{
+    background-color: rgb(255, 255, 255);
+    color:   rgb(44, 129, 150);
+}
+footer button{
+    width: 6%;
+    padding: 10px;
+    font-size: 15px;
+    border: 1.5px solid  rgb(44, 129, 150);
+    border-radius: 0 7px 7px 0;
+    color:  rgb(44, 129, 150);
+}
+section{
+    min-width: 300px;
+    min-height: 400px;
+    border: 0px solid #eee;
+    overflow:hidden;
+    padding: 10px;
+    margin: 10px;
+    transition: 0.5s linear;
+}
+.column {
+    float: left;
+    width: 19%;
+    height: 250px; 
+    margin: 0 20px;
+    padding: 0 15px;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+h4{
+    font-size: 22px;
+    color: rgb(44, 129, 150);
+}
+a{
+    color: rgb(44, 129, 150);
+}
+.credits p{
+    margin: 0 35%;
+}

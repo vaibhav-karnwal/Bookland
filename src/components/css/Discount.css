@@ -1,0 +1,45 @@
+
+.discount{
+    background-color:white;
+    margin: 100px 200px;
+    border-radius: 10px;
+    padding: 0 40px;
+    height: 200px;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.discount h2{
+    font-size: 40px;
+    color:  rgb(44, 129, 150);
+}
+.discount p{
+    font-size: 20px;
+}
+.discount .search{
+    float:right;
+    width: 550px;
+}
+.discount .title{
+    float: left;
+    width: 450px;
+}
+.discount input{
+    margin:110px 0 0 70px;
+    width: 40%;
+    padding: 10px;
+    font-size: 15px;
+    border: 2px solid  rgb(44, 129, 150);
+    border-radius: 7px 0 0 7px;
+    color: rgb(141, 145, 146);
+}
+.discount button{
+    width: 8%;
+    padding: 10px;
+    font-size: 15px;
+    border: 1.5px solid  rgb(44, 129, 150);
+    border-radius: 0 7px 7px 0;
+    color:  rgb(44, 129, 150);
+}

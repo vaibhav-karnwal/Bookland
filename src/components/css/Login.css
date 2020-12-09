@@ -1,0 +1,53 @@
+
+.login{
+    font-size: 22px;
+    float: left;
+    width: 33%;
+    margin: 0 0 0 50px;
+    padding: 55px;
+}
+legend{
+    font-size: 30px;
+    color:  rgb(44, 129, 150);
+}
+.login input{
+    font-size: 22px;
+    float: right;
+    margin: 10px;
+}
+.login label{
+    font-size: 22px;
+    float: left;
+    margin: 10px;
+}
+fieldset{
+    padding-top: 25px;
+}
+.signUp{
+    font-size: 22px;
+    float: right;
+    width: 33%;
+    margin: 0 50px;
+    padding: 55px;
+}
+.signUp input{
+    width: 250px;
+    float: right;
+    padding: 2px;
+    margin: 16px 0 ;
+}
+.signUp label{
+    float: left;
+    margin: 12px;
+}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+select{
+    width: 258px;
+    float: right;
+    padding: 2px;
+    margin: 16px 0 ;
+}
