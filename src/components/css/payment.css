@@ -1,0 +1,60 @@
+.login-form {
+  background-color: white;
+  height: 120vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 5%;
+}
+.login-form form {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  border: 1px solid lightgrey;   
+}
+.left{
+  float: left;
+  position: relative;
+}
+.right{
+  float: right;
+  position: absolute;
+}
+
+.login-form h2 {
+  font-weight: 500;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.form-control, .btn {
+  height: 30px;
+  margin-bottom: 10px;
+  background-color: white;
+  width: 98%;
+  
+}
+.login-form button {
+  background-color: #f0c14b;
+  border: 1px solid;
+  margin-top: 10px;
+  height: 30px;
+  border-radius: 2px;
+  color: #111;
+  border-color: #a88734 #9c7e31 #846a29;
+}
+.heading {
+  height: 80px;
+  line-height: 80px;
+  margin: 60px auto;
+  font-weight: 500;
+  font-size: 32px;
+  color:#60b246;
+}
+.text-center{
+  text-align: center;
+}
+
+legend{
+  font-size: 30px;
+}

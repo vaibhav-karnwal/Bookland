@@ -6,20 +6,11 @@ export class DataProvider extends Component{
         products:[
             {
                 "product_id": "1",
-                "_id": "1",
-                "title": "Computer Organization",
-                "src":"https://goalkicker.com/DotNETFrameworkBook/DotNETFrameworkGrow.png",
-                "description":"by Leo Tolstoy",
-                "content":"Looks like there is a great book about C++ available for free. Checked it and it seems like a definitive guide. ",
-                "price":20,
-                "count":1
-            },{
-                "product_id": "1",
                 "_id":"2",
-                "title":"Computer Networks",
+                "title":"Alorithms",
                 "src":"https://goalkicker.com/AlgorithmsBook/AlgorithmsGrow.png",
                 "description":"by Leo Tolstoy",
-                "content":"Looks like there is a great book about C++ available for free. Checked it and it seems like a definitive guide. ",
+                "content":"The Algorithms Notes for Professionals book is compiled from Stack Overflow Documentation, the content is written by the beautiful people at Stack Overflow. Text content is released under Creative Commons BY-SA. See credits at the end of this book whom contributed to the various chapters. Images may be copyright of their respective owners unless otherwise specified ",
                 "price":20,
                 "count":1
             },{
@@ -37,7 +28,7 @@ export class DataProvider extends Component{
                 "title": "Communication Engineering",
                 "src":"https://goalkicker.com/Angular2Book/Angular2Grow.png",
                 "description":"by Leo Tolstoy",
-                "content":"Looks like there is a great book about C++ available for free. Checked it and it seems like a definitive guide. ",
+                "content":"The Algorithms Notes for Professionals book is compiled from Stack Overflow Documentation, the content is written by the beautiful people at Stack Overflow. Text content is released under Creative Commons BY-SA. See credits at the end of this book whom contributed to the various chapters. Images may be copyright of their respective owners unless otherwise specified ",
                 "price":20,
                 "count":1
             },{
@@ -46,7 +37,7 @@ export class DataProvider extends Component{
                 "title":"War and Peace ",
                 "src":"https://goalkicker.com/BashBook/BashGrow.png",
                 "description":"by Leo Tolstoy",
-                "content":"Looks like there is a great book about C++ available for free. Checked it and it seems like a definitive guide. ",
+                "content":"The Algorithms Notes for Professionals book is compiled from Stack Overflow Documentation, the content is written by the beautiful people at Stack Overflow. Text content is released under Creative Commons BY-SA. See credits at the end of this book whom contributed to the various chapters. Images may be copyright of their respective owners unless otherwise specified",
                 "price":20,
                 "count":1
             },{
@@ -55,7 +46,7 @@ export class DataProvider extends Component{
                 "title":"War and Peace ",
                 "src":"https://goalkicker.com/AngularJSBook/AngularJSGrow.png",
                 "description":"by Leo Tolstoy",
-                "content":"Looks like there is a great book about C++ available for free. Checked it and it seems like a definitive guide. ",
+                "content":"The Algorithms Notes for Professionals book is compiled from Stack Overflow Documentation, the content is written by the beautiful people at Stack Overflow. Text content is released under Creative Commons BY-SA. See credits at the end of this book whom contributed to the various chapters. Images may be copyright of their respective owners unless otherwise specified",
                 "price":20,
                 "count":1
             },{
@@ -64,7 +55,7 @@ export class DataProvider extends Component{
                 "title": "War and Peace",
                 "src":"https://goalkicker.com/CBook/CGrow.png",
                 "description":"by Leo Tolstoy",
-                "content":"Looks like there is a great book about C++ available for free. Checked it and it seems like a definitive guide. ",
+                "content":"The Algorithms Notes for Professionals book is compiled from Stack Overflow Documentation, the content is written by the beautiful people at Stack Overflow. Text content is released under Creative Commons BY-SA. See credits at the end of this book whom contributed to the various chapters. Images may be copyright of their respective owners unless otherwise specified ",
                 "price":20,
                 "count":1
             },{
@@ -155,14 +146,14 @@ export class DataProvider extends Component{
 
     }
   
-    addCart = (id, product_id) =>{
+    addCart = (id) =>{
         const {products, cart} = this.state;
         const check = cart.every(item =>{
             return item._id !== id
         })
         if(check){
             const data = products.filter(product =>{
-                return product._id === product_id
+                return product._id === id
             })
             this.setState({cart: [...cart,...data]})
         }else{

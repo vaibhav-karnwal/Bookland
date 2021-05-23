@@ -1,10 +1,8 @@
 import React from 'react';
 import {BrowserRouter as Router} from 'react-router-dom'
-import Header from './components/Header'
 import Section from './components/Section'
 import Footer from './components/Footer'
-import Search from './components/Search'
-
+import Header from './components/Header'
 import {DataProvider} from './components/Context'
 
 class App extends React.Component{
@@ -13,7 +11,6 @@ class App extends React.Component{
       <DataProvider>
         <div className="app">
           <Router>
-            <Search />
             <Header />
             <Section />
             <Footer />

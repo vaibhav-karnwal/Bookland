@@ -7,8 +7,8 @@ export class Search extends Component{
     return (
         <nav className="title">
           <div className="logo">
-          <Link to="/"><h1>Bookland</h1></Link>
-        </div>  
+         	 <Link to="/"><h1>Bookland</h1></Link>
+       	 </div>  
         <div className="search">
             <form class="#">
                 <input class="search-bar" type="search" placeholder="Search" aria-label="Search"></input>

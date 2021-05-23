@@ -38,7 +38,6 @@ export class Details extends Component {
                             <div className="box">
                                 <div className="row">
                                     <h2>{item.title}</h2>
-                                    <i class="yellow icon-star">::before</i>
                                     <span>Price : ${item.price}</span>
                                 </div>
                                 <p>{item.description}</p>

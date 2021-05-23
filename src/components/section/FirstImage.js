@@ -1,10 +1,9 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 import {Link} from 'react-router-dom'
 import '../css/image.css'
- 
+
 export class FirstImage extends Component {
-      
-      render () {
+    render () {
         return (
             <div className="container">
             <div className="row">

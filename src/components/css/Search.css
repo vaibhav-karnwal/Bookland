@@ -1,22 +1,7 @@
-.title{
-    height: 100px;
-    background-color: white;
-}
 
-nav{
-    min-height: 70px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    overflow: hidden;
-}
-nav .logo a{
-    text-decoration: none;
-    font-size: 40px;
-}
 .search input{
     margin: 0 0 0 50px;
-    width: 800px;
+    width: 650px;
     padding: 10px;
     font-size: 15px;
     border: none;

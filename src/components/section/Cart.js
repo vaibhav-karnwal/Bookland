@@ -1,7 +1,6 @@
 import React, { Component } from 'react'
 import {DataContext} from '../Context'
 import {Link} from 'react-router-dom'
-import '../css/Details.css'
 import '../css/Cart.css'
 
 export class Cart extends Component {
@@ -14,11 +13,16 @@ export class Cart extends Component {
     render() {
         const {cart,increase,reduction,removeProduct,total} = this.context;
         if(cart.length === 0){
-            return <h2 style={{textAlign:"center"}}>No Book in the Cart</h2>
+            return <h2 style={{textAlign:"center"}}>Cart is Empty</h2>
         }else{
             return (
                 <>
+                    <div class="col-left">
+                    <div>
+                        <h2>BookLand Cart</h2>
+                    </div>
                     {
+                        
                         cart.map(item =>(
                             <div className="details cart" key={item._id}>
                                 <img src={item.src} alt=""/>
@@ -28,7 +32,6 @@ export class Cart extends Component {
                                         <span>${item.price * item.count}</span>
                                     </div>
                                     <p>{item.description}</p>
-                                    <p>{item.content}</p>
                                     <div className="amount">
                                         <button className="count" onClick={() => reduction(item._id)}> - </button>
                                         <span>{item.count}</span>
@@ -39,9 +42,12 @@ export class Cart extends Component {
                             </div>
                         ))
                     }
+                    </div>
+                    <div class="col-right">
                     <div className="total">
                         <Link to="/payment">Payment</Link>
-                        <h3>Total: "${total}"</h3>
+                        <h3>Total: ${total}</h3>
+                    </div>
                     </div>
                 </>
                 )

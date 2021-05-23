@@ -7,10 +7,11 @@ export class Footer extends Component{
     return (
       <footer>
         <section>
+          <hr/>
             <div classNameName="search">
                 <form className="form-inline my-2 my-lg-0">
                   <input className="search-bar" type="search" placeholder="Search" aria-label="Search"></input>
-                  <button className="search-button" type="submit">Search</button>
+                  <button className="search-but" type="submit">Search</button>
                 </form>
               </div>
             <div className="row">
@@ -53,7 +54,7 @@ export class Footer extends Component{
               </div>
         </section>
       <div className="credits">
-          <p>Made by Vaibhav Karnwal &copy; 2020. All rights reserved.</p>
+          <p>2021. All rights reserved.</p>
       </div>
 </footer>
     )

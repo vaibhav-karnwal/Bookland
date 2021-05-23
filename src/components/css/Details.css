@@ -3,7 +3,7 @@
     justify-content: space-around;
     flex-wrap: wrap;
     margin: 0 0;
-    border: 1px solid  rgb(44, 129, 150);;
+    border: 1px solid  rgb(44, 129, 150);
 }
 .details img{
     max-width: 500px;
@@ -11,7 +11,8 @@
     height: 400px;
     display: block;
     object-fit: cover;
-    margin: 25px;
+    margin: 35px;
+    border: 1px solid  rgb(44, 129, 150);
 }
 .yellow{
     color:#F5A623;
@@ -19,16 +20,24 @@
 .details .box{
     max-width: 500px;
     min-width: 290px;
-    margin: 25px;
 }
 .box .row{
     display: flex;
     justify-content: space-between;
     margin-bottom: 5px;
 }
+.box .row span{
+    margin-right:100px;
+    margin-top:60px;
+    font-size: 18px;
+    width:200px;
+    color:rgb(173, 130, 48);
+    position:absolute;
+}
 .box .row h2{
     text-transform: uppercase;
     letter-spacing: 2px;
+    color: rgb(44, 129, 150);;
 }
 .box .colors button{
     width: 30px;

@@ -1,10 +1,74 @@
-section .cart{
+.details{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.col-right{
+    float:right;
+    position: absolute;
+    margin: 0;
+    width: 100%;
+}
+.col-left{
+    float:left;
     position: relative;
-    border: 1px solid #ccc;
+    margin: 0 100px;
+    width: 100%;
+}
+.details img{
+    max-width: 130px;
+    min-width: 130px;
+    height: 200px;
+    display: block;
+    object-fit: cover;
+    margin: 35px 0px;
+}
+.yellow{
+    color:#F5A623;
+}
+.details .box{
+    max-width: 50%;
+    min-width: 50%;
+    padding: 25px;
+}
+.box .row span{
+    margin-top:45px;
+    font-size: 18px;
+    color:rgb(173, 130, 48);
+    position:absolute;
+}
+.box .row h2{
+    text-transform: uppercase;
+    color: rgb(44, 129, 150);
+    font-size: 20px;
+}
+.box .colors button{
+    width: 20px;
+    height: 20px;
+    border: 1px solid #333;
+    outline: none;
+    float:right;
+    margin-right: 2px;
+    cursor: pointer;
+}
+.box p{
+    margin: 15px 0;
+}
+.box .cart{
+    background:  rgb(44, 129, 150);;
+    color: white;
+    text-decoration: none;
+    padding: 10px 10px;
+    display: inline-block;
+}
+section .cart{
+    width:60%;
+    position: relative;
+    background-color:rgb(238, 244, 245) ;
 }
 .amount span{
-    color: rgb(0, 83, 131);
-    padding: 0 20px;
+    color: crimson;
+    padding: 0 10px;
 }
 .amount .count{
     width: 40px;
@@ -23,21 +87,31 @@ section .cart{
     font-weight: 900;
 }
 .total{
-    width: 100%;
-    height: 50px;
+    width: 20%;
+    height: 130px;
     display: flex;
-    align-items: center;
+    float:right;
+    border:1px solid rgb(105, 105, 45);
+    padding:20px;
+    margin-top:100px;
+    margin-right:100px;;
     justify-content: space-between;
 }
 .total a{
+    margin-top: 5%;
+    width: 17%;
     text-decoration: none;
     background: #333;
     color: white;
     text-transform: uppercase;
     letter-spacing: 2px;
     padding: 10px 25px;
+    position: absolute;
+    text-align: center;
 }
 .total h3{
-    margin-right: 50px;
+    margin: 15px 7%;
     color: crimson;
+    position: absolute;
+    text-align: center;
 }
