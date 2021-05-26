@@ -11,10 +11,13 @@ import {Route} from "react-router-dom"
 import Signin from './section/Signin'
 import Signup from './section/Signup'
 import Payment from './section/Payment'
+import JSONDATA from '../product.json'
 import HeaderFirstPart from './section/HeaderFirstPart'
 import HeaderSecondPart from './section/HeaderSecondPart'
 import HeaderSixthPart from './section/HeaderSixthPart'
 import HeaderSeventhPart from './section/HeaderSeventhPart'
+
+
 
 export class section extends Component {
     render() {
@@ -28,7 +31,7 @@ export class section extends Component {
                 <Route path="/childrens-books" component={Childrensbooks} exact  />
                 <Route path="/subjective-books" component={Subjectivebooks} exact  />
                 <Route path="/story-books" component={Storybooks} exact  />
-                <Route path="/scifi-fantasy" component={Scififantasy} exact  />
+               <Route path="/scifi-fantasy" component={Scififantasy} exact  />
                 <Route path="/product/:id" component={Details} exact />
                 <Route path="/cart" component={Cart}  exact/>
                 <Route path="/signin" component={Signin} exact />
