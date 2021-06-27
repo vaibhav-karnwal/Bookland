@@ -8,7 +8,7 @@ import Subjectivebooks from './section/Subjectivebooks'
 import Details from './section/Details'
 import Cart from './section/Cart'
 import {Route} from "react-router-dom"
-import Signin from './section/Signin'
+import SignIn from './section/Signin'
 import Signup from './section/Signup'
 import Payment from './section/Payment'
 import JSONDATA from '../product.json'
@@ -34,7 +34,7 @@ export class section extends Component {
                <Route path="/scifi-fantasy" component={Scififantasy} exact  />
                 <Route path="/product/:id" component={Details} exact />
                 <Route path="/cart" component={Cart}  exact/>
-                <Route path="/signin" component={Signin} exact />
+                <Route path="/signin" component={SignIn} exact />
                 <Route path="/signup" component={Signup} exact />
                 <Route path="/payment" component={Payment} exact />
             </section>
