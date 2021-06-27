@@ -1,36 +1,78 @@
-
-
 import React from 'react';
-import '../css/Signin.css'
 
-const Signin = (props) => {
+import FormInput from '../form-input/form-input.component';
+import CustomButton from '../custom-button/custom-button.component';
 
-    console.log(props.user,"user")
+import { auth, signInWithGoogle } from '../../firebase/firebase.utils';
 
-  return(
-    <div className="login-form">
-    <form action="/examples/actions/confirmation.php" method="post">
-        <h2 className="pull-left">Welcome Back</h2>     
-        <p className="pull-left">Sign in with your email address or mobile number.</p>
+import {
+    SignInContainer,
+    SignInTitle,
+    ButtonsBarContainer
+} from './sign-in.styles';
 
-        <div className="form-group">
-            <input type="text" className="form-control" placeholder="Email or mobile number" onChange={(e)=>props.userLoginChange(e.target.value)} required="required"/>
-        </div>
-        <div className="form-group">
-            <input type="password" className="form-control" placeholder="Password" onChange={(e)=>props.pwdLoginChange(e.target.value)} required="required"/>
-        </div>
-        <div className="form-group">
-            <button type="submit" className="btn btn-block btn-cust" onClick={(e) => props.login(e)}>Log in</button>
-        </div>
-        {/* <div className="clearfix">
-            <label className="pull-left checkbox-inline"><input type="checkbox"/> Remember me</label>
-            <a href="#" className="pull-right">Forgot Password?</a> 
-        </div>         */}
-    <p className="text-center">New to Bookland? <a onClick={()=>props.buy("signup")}>Create an Account</a></p>
-    </form>
-</div>
+class SignIn extends React.Component {
+    constructor(props) {
+    super(props);
 
-  )
+    this.state = {
+        email: '',
+        password: ''
+    };
 }
 
-export default Signin;
+handleSubmit = async event => {
+    event.preventDefault();
+
+    const { email, password } = this.state;
+
+    try {
+        await auth.signInWithEmailAndPassword(email, password);
+        this.setState({ email: '', password: '' });
+    } catch (error) {
+        console.log(error);
+    }
+};
+
+handleChange = event => {
+    const { value, name } = event.target;
+
+    this.setState({ [name]: value });
+};
+
+render() {
+    return (
+        <SignInContainer>
+            <SignInTitle>I already have an account</SignInTitle>
+            <span>Sign in with your email and password</span>
+
+            <form onSubmit={this.handleSubmit}>
+                <FormInput
+                    name='email'
+                    type='email'
+                    handleChange={this.handleChange}
+                    value={this.state.email}
+                    label='email'
+                    required
+                />
+                <FormInput
+                    name='password'
+                    type='password'
+                    value={this.state.password}
+                    handleChange={this.handleChange}
+                    label='password'
+                    required
+                />
+                <ButtonsBarContainer>
+                    <CustomButton type='submit'> Sign in </CustomButton>
+                    <CustomButton onClick={signInWithGoogle} isGoogleSignIn>
+                        Sign in with Google
+        </CustomButton>
+                </ButtonsBarContainer>
+            </form>
+        </SignInContainer>
+    );
+}
+}
+
+export default SignIn;
