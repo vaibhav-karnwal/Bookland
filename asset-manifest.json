@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/bookland/static/css/main.640aeb7b.chunk.css",
+    "main.js": "/bookland/static/js/main.3499f004.chunk.js",
+    "main.js.map": "/bookland/static/js/main.3499f004.chunk.js.map",
+    "runtime-main.js": "/bookland/static/js/runtime-main.e48da891.js",
+    "runtime-main.js.map": "/bookland/static/js/runtime-main.e48da891.js.map",
+    "static/js/2.1bbe2ea7.chunk.js": "/bookland/static/js/2.1bbe2ea7.chunk.js",
+    "static/js/2.1bbe2ea7.chunk.js.map": "/bookland/static/js/2.1bbe2ea7.chunk.js.map",
+    "static/js/3.a2ca47d3.chunk.js": "/bookland/static/js/3.a2ca47d3.chunk.js",
+    "static/js/3.a2ca47d3.chunk.js.map": "/bookland/static/js/3.a2ca47d3.chunk.js.map",
+    "index.html": "/bookland/index.html",
+    "static/css/main.640aeb7b.chunk.css.map": "/bookland/static/css/main.640aeb7b.chunk.css.map",
+    "static/js/2.1bbe2ea7.chunk.js.LICENSE.txt": "/bookland/static/js/2.1bbe2ea7.chunk.js.LICENSE.txt",
+    "static/media/bars-solid.e8db7520.svg": "/bookland/static/media/bars-solid.e8db7520.svg",
+    "static/media/shopping-cart.25d65fd4.svg": "/bookland/static/media/shopping-cart.25d65fd4.svg",
+    "static/media/times-solid.ea7c95d7.svg": "/bookland/static/media/times-solid.ea7c95d7.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.e48da891.js",
+    "static/js/2.1bbe2ea7.chunk.js",
+    "static/css/main.640aeb7b.chunk.css",
+    "static/js/main.3499f004.chunk.js"
+  ]
+}
